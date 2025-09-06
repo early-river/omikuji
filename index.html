@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>超次元おみくじマシン</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>超次元おみくじマシン</h1>
+
+    <div class="omikuji-result-box">
+        <p id="result-name"></p>
+    </div>
+
+    <div class="omikuji-message-box">
+        <p id ="result-message">ボタンを押して運勢を占おう</p>
+    </div>
+
+
+    <button id="draw-button">おみくじを引く</button>
+
+    <div class="counters">
+    <p>おみくじ回数累計: <span id="omikuji-counter">0</span>回</p>
+    <p>大吉回数累計: <span id="daikichi-counter">0</span>回</p>
+    <p>大凶回数累計: <span id="daikyo-counter">0</span>回</p>
+    <p>現在の連続大吉回数: <span id="current-concecutive-counter">0</span>回</p>
+    <p>連続大吉記録: <span id="record-counter">0</span>回</p>
+    <p id="record-update-text" class="hidden">記録更新中！</p>
+    </div>
+
+    <div id="log-container">
+    <p>おみくじ履歴</p>    
+    <ol id="log-list"></ol>
+    </div>
+
+    <button id="reset-button" class="reset-button">記録をリセット</button>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
